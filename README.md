@@ -1,5 +1,6 @@
-# Opiniothon
-Opinio Hackathon 2016
+# Opiniothon 2016
+
+## Unified Customer Relationship Management Platform
 
 Instead of spamming customers with promo emails, it makes better sense to present the promos to the customers who are actively searching for it. More so if the customer is in the vicinity of your particular stores. 
 
@@ -10,22 +11,19 @@ Reward customers with points for every purchase and score them regarding purchas
 With the power of GPS enabled smartphones, we can inform customers about offers which are specifically relevant to them and record the transaction if there is a successful conversion. 
 
 
-APIs
-****
+### APIs
 1. Businesses can submit promo details to our API
 2. Client apps can get promo coupons based on proximity
-3. Successful usage of coupon is recorded and sent back to server
-4. 
+3. Successful usage of coupon is recorded and sent back to server for serving analytics
 
-Assumptions
-***********
+### Assumptions
 1. Locations of stores randomly placed in a square area within Bangalore.
 2. Location of user is randomly moved around by use of a button
 3. Coupon information for fictitious companies with random discount values.
 
-Database Tables
-***************
-```USER:
+### Database Tables
+```
+USER:
 	id, username, email, birthdate
 
 COUPONS:
@@ -33,7 +31,6 @@ COUPONS:
 
 TX:
 	id, user_id, coupon_id, store_id, timestamp,
-
 
 "store":
 	"id":12345, "merchant":"", "coupons":{1,2,5}, "lat":"", "long":"", "cluster":""
@@ -43,4 +40,4 @@ TX:
 
 "merchant":
 	"stores":{12345,12346,12347}
-	```
+```
